@@ -1,0 +1,48 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.flywaydb:flyway-maven-plugin
+    versions:
+    - 7.5.2
+    - 7.5.3
+    - 7.5.4
+    - 7.6.0
+    - 7.7.0
+    - 7.7.1
+    - 7.7.2
+    - 7.7.3
+    - 7.8.0
+    - 7.8.1
+  - dependency-name: org.jooq:jooq-codegen-maven
+    versions:
+    - 3.14.6
+    - 3.14.7
+    - 3.14.8
+  - dependency-name: org.jooq:jooq-meta-extensions
+    versions:
+    - 3.14.6
+    - 3.14.7
+    - 3.14.8
+  - dependency-name: org.jooq:jooq-meta
+    versions:
+    - 3.14.6
+    - 3.14.7
+    - 3.14.8
+  - dependency-name: org.jooq:jooq-codegen
+    versions:
+    - 3.14.6
+    - 3.14.7
+    - 3.14.8
+  - dependency-name: org.jooq:jooq
+    versions:
+    - 3.14.6
+    - 3.14.7
+    - 3.14.8
+  - dependency-name: mysql:mysql-connector-java
+    versions:
+    - 8.0.23
